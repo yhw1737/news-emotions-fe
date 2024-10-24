@@ -82,7 +82,7 @@ export default {
             });
           this.isLoaded = true;
         } else {
-          alert('API 응답에 데이터가 없습니다.');
+          this.loadingText = 'API 응답에 데이터가 없습니다.';
         }
       } catch (error) {
         clearInterval(this.loadingInterval);
